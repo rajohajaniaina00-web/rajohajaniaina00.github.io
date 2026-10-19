@@ -1,0 +1,4 @@
+*.backup
+*.backup-complet
+*.before-projects.html
+.DS_Store

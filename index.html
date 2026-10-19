@@ -1,0 +1,637 @@
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Portfolio de développeur web junior : projets Django, React, JavaScript et recherche de stage de trois mois."
+  >
+
+  <meta name="theme-color" content="#101827">
+
+  <title>Portfolio | Développeur Web Junior</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navigation principale">
+      <a class="logo" href="#accueil" aria-label="Accueil">
+        <span class="logo-mark">R</span>
+        <span>Portfolio<span class="accent">.</span></span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="nav-links"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#parcours">Parcours</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Accueil -->
+    <section class="hero section" id="accueil">
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+          <p class="eyebrow">
+            DÉVELOPPEMENT WEB · PORTFOLIO
+          </p>
+
+          <h1>
+            Bonjour, je suis un
+            <span class="accent">développeur web junior.</span>
+          </h1>
+
+          <p class="hero-description">
+            Je conçois des applications web en combinant
+            développement backend, interfaces utilisateur et
+            bases de données. Je recherche un stage de trois mois
+            pour renforcer mes compétences et participer à des
+            projets concrets.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projets">
+              Découvrir mes projets
+            </a>
+
+            <a class="button button-secondary" href="#contact">
+              Me contacter
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <span>
+              <span class="status-dot"></span>
+              Recherche de stage
+            </span>
+            <span>Antananarivo, Madagascar</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="profile-card">
+            <div class="profile-card-top">
+              <span class="window-dot"></span>
+              <span class="window-dot"></span>
+              <span class="window-dot"></span>
+              <span class="profile-card-label">developer.profile</span>
+            </div>
+
+            <div class="profile-image-wrap">
+              <img
+                src="images/photo-pro.jpg"
+                alt="Portrait professionnel"
+                class="profile-image"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"
+              >
+
+              <div class="profile-placeholder" aria-hidden="true">
+                <span>DEV</span>
+              </div>
+            </div>
+
+            <div class="profile-card-info">
+              <p class="profile-name">Développeur Web Junior</p>
+              <p class="profile-role">Python · Django · JavaScript</p>
+            </div>
+
+            <div class="code-snippet" aria-label="Extrait de code décoratif">
+              <p><span class="code-purple">const</span> developer = {</p>
+              <p>&nbsp;&nbsp;curious: <span class="code-green">true</span>,</p>
+              <p>&nbsp;&nbsp;learning: <span class="code-green">true</span>,</p>
+              <p>&nbsp;&nbsp;building: <span class="code-green">true</span></p>
+              <p>};</p>
+            </div>
+          </div>
+
+          <div class="floating-tag tag-top">Python</div>
+          <div class="floating-tag tag-bottom">JavaScript</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- À propos -->
+    <section class="section about-section" id="apropos">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">QUI SUIS-JE ?</p>
+          <h2>À propos de moi</h2>
+          <p>
+            Un développeur motivé par la création de solutions
+            utiles et l'apprentissage continu.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <h3>Transformer une idée en application</h3>
+
+            <p>
+              Je suis étudiant en troisième année à IS-INFO
+              Ampasamadinika et développeur web junior. Je m'intéresse
+              à la conception d'applications web, à la gestion des
+              données et à la création d'interfaces simples à utiliser.
+            </p>
+
+            <p>
+              Je travaille notamment avec Python et Django pour le
+              backend, ainsi qu'avec HTML, CSS et JavaScript pour
+              les interfaces web. Je découvre également le
+              développement frontend avec React.
+            </p>
+
+            <p>
+              À travers mes projets, je cherche à appliquer mes
+              connaissances, à améliorer ma méthode de travail et
+              à développer des applications maintenables.
+            </p>
+
+            <a class="text-link" href="#contact">
+              Échanger avec moi <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <div class="about-facts">
+            <article class="fact-card">
+              <span class="fact-number">01</span>
+              <h3>Apprendre</h3>
+              <p>Approfondir mes compétences techniques et découvrir de nouvelles méthodes.</p>
+            </article>
+
+            <article class="fact-card">
+              <span class="fact-number">02</span>
+              <h3>Construire</h3>
+              <p>Développer des applications répondant à des besoins concrets.</p>
+            </article>
+
+            <article class="fact-card">
+              <span class="fact-number">03</span>
+              <h3>Collaborer</h3>
+              <p>Partager des idées, communiquer et progresser en équipe.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compétences -->
+    <section class="section skills-section" id="competences">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">SAVOIR-FAIRE</p>
+          <h2>Mes compétences techniques</h2>
+          <p>
+            Les technologies que j'utilise ou que j'approfondis
+            au fil de mes projets.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+
+          <article class="skill-card">
+            <div class="skill-icon" aria-hidden="true">⌘</div>
+            <h3>Frontend</h3>
+            <p>Création de pages web et d'interfaces interactives.</p>
+            <div class="tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>Bootstrap</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon" aria-hidden="true">{ }</div>
+            <h3>Backend</h3>
+            <p>Logique applicative, routes, formulaires et API.</p>
+            <div class="tags">
+              <span>Python</span>
+              <span>Django</span>
+              <span>Django REST Framework</span>
+              <span>PHP</span>
+              <span>Laravel</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon" aria-hidden="true">▤</div>
+            <h3>Bases de données</h3>
+            <p>Stockage et organisation des données d'une application.</p>
+            <div class="tags">
+              <span>SQLite</span>
+              <span>MySQL</span>
+              <span>PostgreSQL</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon" aria-hidden="true">⚙</div>
+            <h3>Outils</h3>
+            <p>Environnement de développement et outils de conception.</p>
+            <div class="tags">
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>VS Code</span>
+              <span>Odoo</span>
+              <span>Figma</span>
+              <span>Canva</span>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="skills-note">
+          Les compétences sont présentées par domaine ; leur maîtrise
+          varie selon la technologie et les fonctionnalités réalisées.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projets -->
+    <section class="section projects-section" id="projets">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">RÉALISATIONS</p>
+          <h2>Mes projets</h2>
+          <p>
+            Des applications qui me permettent de mettre en pratique
+            le développement web et la gestion des données.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- TaFiTa Manager -->
+          <article class="project-card project-featured">
+            <div class="project-visual tafita-visual">
+              <div class="mock-window">
+                <div class="mock-topbar">
+                  <span></span><span></span><span></span>
+                  <span class="mock-window-title">TaFiTa Manager</span>
+                </div>
+
+                <div class="mock-dashboard">
+                  <div class="mock-sidebar">
+                    <span class="mock-brand">T.</span>
+                    <span class="mock-side-item active"></span>
+                    <span class="mock-side-item"></span>
+                    <span class="mock-side-item"></span>
+                    <span class="mock-side-item"></span>
+                  </div>
+
+                  <div class="mock-main">
+                    <div class="mock-heading"></div>
+
+                    <div class="mock-stat-row">
+                      <div class="mock-stat">
+                        <span></span><strong></strong>
+                      </div>
+                      <div class="mock-stat">
+                        <span></span><strong></strong>
+                      </div>
+                      <div class="mock-stat">
+                        <span></span><strong></strong>
+                      </div>
+                    </div>
+
+                    <div class="mock-chart">
+                      <span style="height: 35%"></span>
+                      <span style="height: 55%"></span>
+                      <span style="height: 42%"></span>
+                      <span style="height: 75%"></span>
+                      <span style="height: 60%"></span>
+                      <span style="height: 88%"></span>
+                      <span style="height: 68%"></span>
+                    </div>
+
+                    <div class="mock-table">
+                      <span></span><span></span>
+                      <span></span><span></span>
+                      <span></span><span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-heading-row">
+                <p class="eyebrow">GESTION ASSOCIATIVE · FULL-STACK</p>
+                <span class="project-status status-progress">
+                  En développement
+                </span>
+              </div>
+
+              <h3>TaFiTa Manager</h3>
+
+              <p>
+                Application web de gestion associative conçue pour
+                centraliser les informations des membres, organiser
+                les événements et suivre les cotisations. Le projet
+                comprend également un tableau de bord et une interface
+                d'administration.
+              </p>
+
+              <div class="tags">
+                <span>Python</span>
+                <span>Django</span>
+                <span>JavaScript</span>
+                <span>SQLite</span>
+              </div>
+
+              <a
+                class="button button-secondary project-link"
+                href="https://github.com/rajohajaniaina00-web/tafita-manager"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Voir le code source <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Boutik Gasy -->
+          <article class="project-card">
+            <div class="project-visual boutique-visual">
+              <div class="shop-preview">
+                <div class="shop-preview-header">
+                  <span class="shop-logo">BOUTIK GASY</span>
+                  <span class="shop-cart">Panier · 02</span>
+                </div>
+
+                <div class="shop-preview-title">
+                  <span>Nos produits</span>
+                  <span class="shop-filter">Explorer ↗</span>
+                </div>
+
+                <div class="shop-products">
+                  <div class="shop-product">
+                    <div class="product-art product-art-one">
+                      <span>GASY</span>
+                    </div>
+                    <span class="product-line"></span>
+                    <span class="product-line short"></span>
+                  </div>
+
+                  <div class="shop-product">
+                    <div class="product-art product-art-two">
+                      <span>MG</span>
+                    </div>
+                    <span class="product-line"></span>
+                    <span class="product-line short"></span>
+                  </div>
+
+                  <div class="shop-product">
+                    <div class="product-art product-art-three">
+                      <span>+</span>
+                    </div>
+                    <span class="product-line"></span>
+                    <span class="product-line short"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-heading-row">
+                <p class="eyebrow">COMMERCE EN LIGNE</p>
+                <span class="project-status status-available">
+                  Code sur GitHub
+                </span>
+              </div>
+
+              <h3>Boutik Gasy</h3>
+
+              <p>
+                Application e-commerce avec catalogue de produits,
+                catégories, recherche, inscription et connexion,
+                gestion du panier et création de commandes.
+                Le frontend et le backend communiquent via une API.
+              </p>
+
+              <div class="tags">
+                <span>Python</span>
+                <span>Django REST Framework</span>
+                <span>React</span>
+                <span>Vite</span>
+                <span>SQLite</span>
+              </div>
+
+              <a
+                class="button button-secondary project-link"
+                href="https://github.com/rajohajaniaina00-web/boutik-gasy"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Voir le code source <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="github-callout">
+          <div>
+            <p class="eyebrow">CODE ET CONTRIBUTIONS</p>
+            <h3>Découvrir mes dépôts GitHub</h3>
+            <p>
+              Retrouvez le code source, les fichiers du projet et
+              les évolutions publiées.
+            </p>
+          </div>
+
+          <a
+            class="button button-primary"
+            href="https://github.com/rajohajaniaina00-web"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Mon GitHub <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Parcours -->
+    <section class="section journey-section" id="parcours">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">FORMATION ET ENGAGEMENT</p>
+          <h2>Mon parcours</h2>
+          <p>
+            Les expériences qui contribuent à ma progression
+            technique et personnelle.
+          </p>
+        </div>
+
+        <div class="timeline">
+
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <p class="timeline-date">Formation actuelle</p>
+              <h3>Troisième année — IS-INFO</h3>
+              <p class="timeline-place">Ampasamadinika, Antananarivo</p>
+              <p>
+                Formation en informatique et approfondissement des
+                connaissances en développement et conception d'applications.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <p class="timeline-date">Projet personnel</p>
+              <h3>Développement de TaFiTa Manager</h3>
+              <p class="timeline-place">Python · Django · JavaScript</p>
+              <p>
+                Mise en pratique de la modélisation des données,
+                des formulaires, de l'authentification et de la
+                gestion des membres et événements.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <p class="timeline-date">Engagement associatif</p>
+              <h3>TaFiTa et FPFE Jeunes Analamanga</h3>
+              <p>
+                Participation à des activités associatives et
+                développement de compétences en organisation,
+                communication et travail en équipe.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <p class="timeline-date">Engagement bénévole</p>
+              <h3>Chef Éclaireur — Scout de Madagascar</h3>
+              <p>
+                Expérience d'encadrement, de collaboration,
+                de responsabilité et de préparation d'activités.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-content">
+            <p class="eyebrow">TRAVAILLONS ENSEMBLE</p>
+
+            <h2>À la recherche d'un stagiaire motivé ?</h2>
+
+            <p>
+              Je recherche un stage de trois mois en développement web
+              afin de contribuer à des projets concrets, apprendre
+              auprès d'une équipe et développer mon expérience professionnelle.
+            </p>
+
+            <div class="contact-actions">
+              <!-- Remplace cette adresse par ton adresse e-mail réelle -->
+              <a
+                class="button button-primary"
+                href="mailto:ton-email@example.com?subject=Proposition%20de%20stage"
+              >
+                M'écrire par e-mail
+              </a>
+
+              <a
+                class="button button-secondary"
+                href="https://github.com/rajohajaniaina00-web"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Consulter GitHub ↗
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-details">
+            <div class="contact-detail">
+              <span class="contact-detail-label">Localisation</span>
+              <span>Antananarivo, Madagascar</span>
+            </div>
+
+            <div class="contact-detail">
+              <span class="contact-detail-label">Disponibilité recherchée</span>
+              <span>Stage de trois mois</span>
+            </div>
+
+            <div class="contact-detail">
+              <span class="contact-detail-label">Dépôts de code</span>
+              <a
+                href="https://github.com/rajohajaniaina00-web"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                github.com/rajohajaniaina00-web
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pied de page -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <a class="logo footer-logo" href="#accueil">
+        <span class="logo-mark">R</span>
+        <span>Portfolio<span class="accent">.</span></span>
+      </a>
+
+      <p>
+        © <span id="current-year">2026</span>
+        — Portfolio de développeur web junior.
+      </p>
+
+      <a href="#accueil" class="back-to-top">
+        Retour en haut ↑
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
+```
